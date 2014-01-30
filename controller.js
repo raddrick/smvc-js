@@ -1,6 +1,6 @@
 rs.controller = {
-  models:[],
-  views:[],
+  models:{},
+  views:{},
   init:function(o){
 
     // check for array
