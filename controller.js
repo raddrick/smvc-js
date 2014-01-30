@@ -44,5 +44,16 @@ rs.controller = {
       }
     }
     return true;
+  },
+  get: function(model){
+    for (var i=0; i<this.models.length; i++){
+      var m=this.models[i];
+      if (model != m.id) continue;
+      return {
+        v:this.views[i],
+        m:this.models[i]
+      };
+    }
+    return 0;
   }
 };
